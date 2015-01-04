@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator", "Validator\Validator.csproj", "{EB53830C-D3C9-415B-A9C4-1925FD4C8C45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{1E6E3697-ACB7-4224-A268-11F7075FBDB9}"
+	ProjectSection(SolutionItems) = preProject
+		Properties\SolutionInfo.cs = Properties\SolutionInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator.Tests", "Validator.Tests\Validator.Tests.csproj", "{EEF3371D-ABAF-402A-82F8-E7FE6F11DDCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Git", "Git", "{24EC7E9F-BFF8-4628-9800-5BE6F4CDD3AB}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB53830C-D3C9-415B-A9C4-1925FD4C8C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB53830C-D3C9-415B-A9C4-1925FD4C8C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB53830C-D3C9-415B-A9C4-1925FD4C8C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB53830C-D3C9-415B-A9C4-1925FD4C8C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF3371D-ABAF-402A-82F8-E7FE6F11DDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF3371D-ABAF-402A-82F8-E7FE6F11DDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF3371D-ABAF-402A-82F8-E7FE6F11DDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
