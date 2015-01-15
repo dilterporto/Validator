@@ -4,7 +4,7 @@ namespace Validator
 {
     /// <summary>Object validation errors</summary>
     /// <typeparam name="T"></typeparam>
-    public sealed class ValidationErrors<T> : IValidationErrorsOfT<T> 
+    public class ValidationErrors<T> : IValidationErrorsOfT<T> 
         where T : class
     {
         /// <summary>Constructor</summary>

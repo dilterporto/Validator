@@ -54,7 +54,12 @@
     <Compile Include="..\Properties\SolutionInfo.cs">
       <Link>Properties\SolutionInfo.cs</Link>
     </Compile>
+    <Compile Include="Attributes\EnumValidateAttributeTests.cs" />
+    <Compile Include="Attributes\NotNullValidateAttributeTests.cs" />
+    <Compile Include="Attributes\StringValidateAttributeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickStartTests.cs" />
+    <Compile Include="ValidatorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Validator\Validator.csproj">
