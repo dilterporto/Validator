@@ -24,11 +24,13 @@ namespace Validator
         /// <summary>Validation message</summary>
         public string Message { get; private set; }
 
+        /// <summary>Determines whether the specified System.Object is equal to the current System.Object</summary>
         public override bool Equals(object obj)
         {
             return Equals(obj as ValidationError);
         }
 
+        /// <summary>Serves as a hash function for thr type</summary>
         public override int GetHashCode()
         {
             unchecked
@@ -37,6 +39,7 @@ namespace Validator
             }
         }
 
+        /// <summary>Indicates whether the current object is equal to another object of the same type</summary>
         public bool Equals(ValidationError other)
         {
             if (ReferenceEquals(null, other)) return false;
