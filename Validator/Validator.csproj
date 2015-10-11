@@ -52,6 +52,7 @@
     <Compile Include="Attributes\EnumStringValidateAttribute.cs" />
     <Compile Include="Attributes\IntValidateAttribute.cs" />
     <Compile Include="Attributes\LongValidateAttribute.cs" />
+    <Compile Include="Attributes\MatchAttribute.cs" />
     <Compile Include="Attributes\NotNullValidateAttribute.cs" />
     <Compile Include="Attributes\NullableByteValidateAttribute.cs" />
     <Compile Include="Attributes\NullableDecimalValidateAttribute.cs" />

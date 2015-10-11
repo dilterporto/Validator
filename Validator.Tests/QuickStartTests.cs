@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Validator.Attributes;
 
 namespace Validator.Tests
@@ -14,6 +15,10 @@ namespace Validator.Tests
         [ComplexTypeValidate] // This attribute tells Validator to validate MyValueClass object
         [NotNullValidate("MyValue must be specified.")]
         public MyValueClass MyValue { get; set; }
+
+
+        [Match("The value can't be matched", Pattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$")]
+        public string Email { get; set; }
     }
 
     public class MyValueClass
@@ -51,6 +56,22 @@ namespace Validator.Tests
 
             Assert.AreEqual("Value", validationErrors.Errors[1].Key);
             Assert.AreEqual("Value must be specified.", validationErrors.Errors[1].Message);
+        }
+
+        [TestMethod]
+        public void Test_Validate_Should_Regex_Error()
+        {
+            
+            var myClass = new MyClass()
+            {
+                Email = "notEmail"
+            };
+
+            var validator = new Validator();
+            var validationErrors = validator.Validate(myClass);
+
+            Assert.IsNotNull(validationErrors.Errors.FirstOrDefault(d => d.Key == "Email"));
+
         }
     }
 }
